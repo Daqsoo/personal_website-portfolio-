@@ -13,7 +13,7 @@ function Header() {
           </div>
           <ul className="nav-menu">
             <li className="item">
-              <a href="" className="link">
+              <a href="/" className="link">
                 {' '}
                 Projects{' '}
               </a>
