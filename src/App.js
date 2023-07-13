@@ -1,16 +1,22 @@
 import './SCSS/style.scss';
 import React from 'react';
 
-import Main from './Components/Main';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
+import Home from './Pages/Home';
+import Projects from './Pages/Projects';
+import Skills from './Pages/Skills';
+import Contacts from './Pages/Contacs';
+
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <>
-      <Header />
-      <Main />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/projects" element={<Projects />}></Route>
+        <Route path="/skills" element={<Skills />}></Route>
+        <Route path="/contacts" element={<Contacts />}></Route>
+      </Routes>
     </>
   );
 }

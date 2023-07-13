@@ -1,34 +1,36 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 function Header() {
   return (
     <div className="main-layout">
       <div className="nav">
         <div className="nav-row">
           <div className="nav-logo">
-            <a href="./index.html">
-              <strong>Daqsoo</strong>
+            <Link to="/">
+              <strong>Daqsoo </strong>
               Portfolio
-            </a>
+            </Link>
           </div>
           <ul className="nav-menu">
             <li className="item">
-              <a href="/" className="link">
+              <Link to="/projects" className="link">
                 {' '}
                 Projects{' '}
-              </a>
+              </Link>
             </li>
             <li className="item">
-              <a href="./skills.html" className="link">
+              <Link to="/skills" className="link">
                 {' '}
                 Skills{' '}
-              </a>
+              </Link>
             </li>
             <li className="item">
-              <a href="./contacts.html" className="link">
+              <Link to="/contacts" className="link">
                 {' '}
                 Contacts{' '}
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

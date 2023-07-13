@@ -31,7 +31,7 @@ body {
   }
   .nav-logo {
     font-family: 'Poppins', sans-serif;
-    font-size: 24px;
+    font-size: 32px;
 
     a {
       color: white;
@@ -48,7 +48,7 @@ body {
   .link {
     color: white;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 30px;
     transition: 0.2s ease-in;
 
     :hover {
@@ -161,6 +161,10 @@ body {
   p {
     padding-top: 10px;
   }
+  img {
+    width: 500;
+    height: 250px;
+  }
 }
 .footer {
   background-color: #26292d;
@@ -181,5 +185,8 @@ body {
     display: flex;
     column-gap: 30px;
     align-items: center;
+  }
+  .copyright {
+    color: white;
   }
 }

@@ -1,6 +1,11 @@
 import React from 'react';
+
 import mainLogo from '../img/squares.png';
-import Project1 from '../img/Project1.png';
+import SneakersShop from '../img/Project1.png';
+import PizzaShop from '../img/Project2.png';
+import MERNBlog from '../img/Project3.png';
+
+import { Link } from 'react-router-dom';
 
 function Main() {
   return (
@@ -18,39 +23,39 @@ function Main() {
           <div className="main-text">
             <p>with passion for learning and creating.</p>
           </div>
-          <a href="/" className="btn">
+          <Link to="/" className="btn">
             Download CV
-          </a>
+          </Link>
         </div>
       </div>
       <div className="main-projects">
         <strong>Projects</strong>
       </div>
       <div className="main-projects-table">
-        <a href="./skills.html" className="main-projects-table-element">
-          <img src={Project1} alt="ProjectTableImg" />
+        <Link
+          to="https://github.com/Daqsoo/daqsoo-sneakers"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="main-projects-table-element">
+          <img src={SneakersShop} alt="ProjectTableImg" />
           <p>Sneaker Shop</p>
-        </a>
-        <a href="./skills.html" className="main-projects-table-element">
-          <img src={Project1} alt="ProjectTableImg" />
-          <p>Sneaker Shop</p>
-        </a>
-        <a href="./skills.html" className="main-projects-table-element">
-          <img src={Project1} alt="ProjectTableImg" />
-          <p>Sneaker Shop</p>
-        </a>
-        <a href="./skills.html" className="main-projects-table-element">
-          <img src={Project1} alt="ProjectTableImg" />
-          <p>Sneaker Shop</p>
-        </a>
-        <a href="./skills.html" className="main-projects-table-element">
-          <img src={Project1} alt="ProjectTableImg" />
-          <p>Sneaker Shop</p>
-        </a>
-        <a href="./skills.html" className="main-projects-table-element">
-          <img src={Project1} alt="ProjectTableImg" />
-          <p>Sneaker Shop</p>
-        </a>
+        </Link>
+        <Link
+          to="https://github.com/Daqsoo/pizza_shop"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="main-projects-table-element">
+          <img src={PizzaShop} alt="ProjectTableImg" />
+          <p>Pizza Shop</p>
+        </Link>
+        <Link
+          to="https://github.com/Daqsoo/mern-blog-front"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="main-projects-table-element">
+          <img src={MERNBlog} alt="ProjectTableImg" />
+          <p>MERN Blog</p>
+        </Link>
       </div>
     </>
   );
